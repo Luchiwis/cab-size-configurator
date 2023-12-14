@@ -22,25 +22,31 @@
                     <div class="input-group d-block">
                         <div class="sect" id="sect-model">
                             <h4>Model</h4>
-                            <label for="panorama">Panorama</label>
-                            <input type="radio" name="model" value="panorama" id="panorama">
-                            <br>
-                            <label for="renaissance">Renaissance</label>
-                            <input type="radio" name="model" value="renaissance" id="renaissance">
-                            <br>
-                            <label for="legacy">Legacy Volt</label>
-                            <input type="radio" name="model" value="legacy" id="legacy">
-                            <br>
-                            <label for="lula">Serenus LULA</label>
-                            <input type="radio" name="model" value="lula" id="lula">
-                            <br>
-                            <label for="lula">Carelift</label>
-                            <input type="radio" name="model" value="carelift" id="carelift">
-
-                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Residential</h5>
+                                    <label for="panorama">Panorama</label>
+                                    <input type="radio" name="model" value="panorama" id="panorama">
+                                    <br>
+                                    <label for="renaissance">Renaissance</label>
+                                    <input type="radio" name="model" value="renaissance" id="renaissance">
+                                    <br>
+                                    <label for="legacy">Legacy Volt</label>
+                                    <input type="radio" name="model" value="legacy" id="legacy">
+                                </div>
+                                <div class="col">
+                                    <h5>Commercial</h5>
+                                    <!-- <label for="lula">Serenus LULA</label>
+                                    <input type="radio" name="model" value="lula" id="lula">
+                                    <br> -->
+                                    <label for="lula">Carelift</label>
+                                    <input type="radio" name="model" value="carelift" id="carelift">
+                                    <br>
+                                </div>
+                            </div>
                             <button class="btn btn-light border" onclick="uncheckAll('sect-model')">reset model</button>
                         </div>
-                        <hr>
+
                         <div class="sect" id="sect-type">
                             <h4>Type</h4>
 
@@ -61,65 +67,72 @@
 
                             <input type="radio" name="type" value="T" id="T">
                             <label for="T"><img src="img/T.png" alt="type T"></label>
-
+                            <br>
                             <button class="btn btn-light border" onclick="uncheckAll('sect-type')">reset type</button>
                         </div>
-                        <hr>
                         <div class="sect" id="sect-door">
                             <h4>Door Type</h4>
-                            <label for="accordion-gate">Accordion</label>
-                            <input type="radio" name="door" value="accordion" id="accordion-gate">
-                            <br>
-                            <label for="bifold-gate">Bifold</label>
-                            <input type="radio" name="door" value="bifold" id="bifold-gate">
-                            <br>
-                            <label for="slide-2">Slide 2</label>
-                            <input type="radio" name="door" value="slide-2" id="slide-2">
-                            <br>
-                            <label for="slide-2">Slide 3</label>
-                            <input type="radio" name="door" value="slide-2" id="slide-2">
-
+                            <div class="row">
+                                <div class="col">
+                                    <label for="accordion-gate">Accordion</label>
+                                    <input type="radio" name="door" value="accordion" id="accordion-gate">
+                                    <br>
+                                    <label for="bifold-gate">Bifold</label>
+                                    <input type="radio" name="door" value="bifold" id="bifold-gate">
+                                </div>
+                                <div class="col">
+                                    <label for="slide-2">Slide 2</label>
+                                    <input type="radio" name="door" value="slide-2" id="slide-2">
+                                    <br>
+                                    <label for="slide-2">Slide 3</label>
+                                    <input type="radio" name="door" value="slide-2" id="slide-2">
+                                </div>
+                            </div>
                             <hr>
                             <label for="landing-door">Landing door:</label>
                             <input type="checkbox" name="landing" id="landing-door">
                             <br>
                             <label for="landing-door-type">Type:</label>
                             <p id="landing-door-type"></p>
-                            <button class="btn btn-light border" onclick="uncheckAll('sect-door')">reset door type</button>
+                            <button class="btn btn-light border" onclick="uncheckAll('sect-door')">reset door
+                                type</button>
 
                         </div>
-                        <hr>
                         <div class="sect" id="sect-inner-size">
                             <h4>Inner cab size</h4>
                             <label for="inner-width" class="form-label">Width</label>
-                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="inner-width">
+                            <input type="range" class="form-range" min="0" max="5" step="0.5" name="inner-width"
+                                id="inner-width">
                             <label for="inner-depth" class="form-label">Depth</label>
-                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="inner-depth">
+                            <input type="range" class="form-range" min="0" max="5" step="0.5" name="inner-depth"
+                                id="inner-depth">
+                            <label for="inner-height" class="form-label">Height</label>
+                            <input type="range" class="form-range" min="0" max="5" step="0.5" name="inner-height"
+                                id="inner-height">
                         </div>
-                        <hr>
                         <div class="sect" id="sect-inner-size">
                             <h4>Hoistway size</h4>
-                            <label for="inner-width" class="form-label">Width</label>
-                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="inner-width">
-                            <label for="inner-depth" class="form-label">Depth</label>
-                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="inner-depth">
+                            <label for="hoistway-width" class="form-label">Width</label>
+                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="hoistway-width">
+                            <label for="hoistway-depth" class="form-label">Depth</label>
+                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="hoistway-depth">
+
                         </div>
                     </div>
 
                 </div>
                 <div class="col-xl-6 col-lg-7">
                     <div class="sect" id="top-view">
-                        <h3>Top view</h3>
+                        <h4>Top view</h4>
                         <canvas height="500" width="500" class="border"></canvas>
                     </div>
-                    <hr>
                     <div class="sect" id="sect-spaces">
                         <h4>Required spaces</h4>
-                        <p>Pit depth: <span id="pit-depth"></span></p>
-                        <p>Overhead clearence: <span id="overhead"></span></p>
+                        <p>Minimum pit depth: <span id="pit-depth"></span></p>
+                        <p>Minimum overhead clearence: <span id="overhead"></span></p>
                         <p>Distance to back of control wall: <span id="distance-control"></span></p>
                         <p>Running clearence: <span id="running-clearence"></span></p>
-                        <p>Other clearences: <span id="other-clearence">5.5"</span></p>
+                        <p>: <span id="other-clearence">5.5"</span></p>
                     </div>
 
                 </div>
@@ -129,6 +142,7 @@
     <footer></footer>
     <script src="js/bootstrap.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/calculator.js"></script>
 </body>
 
 </html>

@@ -23,4 +23,14 @@ input[type=radio]+label>img {
     border:1px dashed #444;
     border-radius: 10px !important;
     padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+#sect-model input[type=radio]{
+    -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2);
+  margin-left: 5px;
 }
