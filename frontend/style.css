@@ -1,3 +1,26 @@
-/* div{
-    border: 1px solid black;
-} */
+#sect-type input{
+    position: absolute;
+    left: -9999px;
+}
+#sect-type img{
+    margin: 10px;
+}
+
+input[type=radio]:checked+label>img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px #090;
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio]+label>img {
+    border: 1px dashed #444;
+    width: 150px;
+    height: 150px;
+    transition: 500ms all;
+}
+
+.sect{
+    border:1px dashed #444;
+    border-radius: 10px !important;
+    padding: 5px;
+}

@@ -1,0 +1,1 @@
+// this script is used to display the topview of the elevator from input-data
